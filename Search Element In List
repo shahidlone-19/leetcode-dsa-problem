@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main() {
+    int N, searchElement, found = 0;
+
+
+    
+    scanf("%d", &N);
+
+    int elements[N];
+
+    
+    
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &elements[i]);
+    }
+
+   
+    scanf("%d", &searchElement);
+
+    
+    for (int i = 0; i < N; i++) {
+        if (elements[i] == searchElement) {
+            found = 1;
+            break;
+        }
+    }
+
+    
+    if (found) {
+        printf("Found\n");
+    } else {
+        printf("Not Found\n");
+    }
+
+    return 0;
+}
+
+  
